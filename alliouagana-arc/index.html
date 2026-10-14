@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alliouagana Arc - UKOT CIC</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons (THIS FIXES THE ICONS) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Lato', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        'caribbean-blue': '#0077b6',
+                        'tropical-teal': '#00b4d8',
+                        'warm-sand': '#fefae0',
+                        'deep-navy': '#03045e',
+                        'leaf-green': '#2a9d8f'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        body, html { margin: 0; padding: 0; background-color: #f9fafb; }
+        .gradient-bg { background: linear-gradient(135deg, #03045e 0%, #0077b6 100%); }
+    </style>
+</head>
+<body class="text-gray-800 antialiased leading-relaxed" id="home">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-deep-navy text-white py-4 px-6 sticky top-0 z-50 shadow-md">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div class="font-serif text-xl font-bold tracking-wider mb-4 md:mb-0">
+                Alliouagana Arc
+            </div>
+            <div class="flex space-x-6 text-sm md:text-base font-light">
+                <a href="#home" class="hover:text-tropical-teal transition">Home</a>
+                <a href="#about" class="hover:text-tropical-teal transition">Who We Are</a>
+                <a href="#need" class="hover:text-tropical-teal transition">The Need</a>
+                <a href="#services" class="hover:text-tropical-teal transition">Our Services</a>
+				<a href="#contact" class="hover:text-tropical-teal transition">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="gradient-bg text-white py-20 px-6 text-center shadow-lg">
+        <h1 class="font-serif text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Alliouagana Arc</h1>
+        <h2 class="text-xl md:text-2xl font-light text-tropical-teal mb-6 tracking-wide uppercase">UKOT CIC</h2>
+        <p class="max-w-3xl mx-auto text-lg md:text-xl font-light mb-8 leading-relaxed">
+            Our Main Objective: To support UKOT citizens, and authorities in navigating the United Kingdom National Health Service by establishing and operating a multi‑stakeholder social development partnership model. This model strengthens coordination, expands community capacity, and delivers measurable improvements in the lived experiences of citizens across housing, health, wellbeing, and socio‑economic stability.
+        </p>
+        <div class="inline-block bg-warm-sand text-deep-navy font-bold py-3 px-8 rounded-full shadow-md text-lg">
+            🌴 Compassionate Support Far From Home
+        </div>
+    </header>
+
+    <!-- Who We Are Section with Image -->
+    <section id="about" class="py-20 px-6 max-w-6xl mx-auto pt-28 mt--12">
+        <div class="flex flex-col lg:flex-row items-center gap-12">
+            <div class="lg:w-1/2">
+                <h3 class="font-serif text-3xl text-deep-navy mb-6 font-bold">Who We Are</h3>
+                <p class="text-lg text-gray-600 mb-6">
+                    A dedicated Community Interest Company (CIC) with focus on improving the lived experiences of UK Overseas Territories (UKOT) citizens who face significant challenges when accessing healthcare and other welfare support services in the United Kingdom. 
+                </p>
+                <p class="text-lg text-gray-600 mb-6">
+                    Operating at the intersection of health, social care, community development, and welfare support, Alliouagana Arc – CIC delivers a coordinated suite of non‑clinical services designed to reduce vulnerability, strengthen resilience, and improve wellbeing for individuals and families navigating complex medical‑referral pathways.
+                </p>
+                <p class="text-lg text-gray-600">
+                    We will work collaboratively with NHS teams, UKOT governments, MUKGO, charities, and community groups to build reliable support pathways that alleviate socio‑economic hardship, reduce stress and anxiety, and strengthen patient safety nets.
+                </p>
+            </div>
+            <div class="lg:w-1/2">
+                <img src="assets/images/Gemini_Generated_Image_sgc17ysgc17ysgc1.jpg" alt="A family gathering in a garden showing community support" class="rounded-2xl shadow-xl w-full h-auto object-cover border-4 border-warm-sand">
+            </div>
+        </div>
+    </section>
+
+    <!-- Statement of Need -->
+    <section id="need" class="bg-tropical-teal text-white py-20 px-6 pt-28 mt--12">
+        <div class="max-w-5xl mx-auto text-center">
+            <h3 class="font-serif text-3xl mb-8 font-bold text-deep-navy">Statement of Need</h3>
+            <p class="text-lg mb-10 max-w-4xl mx-auto font-light leading-relaxed">
+                British citizens on the NHS medical‑referral Quota system from the UKOT of Montserrat face a unique combination of challenges that significantly affect their ability to access care, maintain stability, and achieve positive health outcomes.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+                <div class="bg-white/10 p-6 rounded-xl border border-white/20">
+                    <h4 class="font-bold text-xl mb-2 text-warm-sand">Restricted Access & Pressures</h4>
+                    <p class="font-light">Limited eligibility for UK health and welfare support, combined with insufficient understanding of policies, leaves families uncertain about their entitlements. Many households also experience food insecurity and financial strain.</p>
+                </div>
+                <div class="bg-white/10 p-6 rounded-xl border border-white/20">
+                    <h4 class="font-bold text-xl mb-2 text-warm-sand">Logistical & Cultural Barriers</h4>
+                    <p class="font-light">Families struggle with transportation, navigating the NHS digital‑first healthcare system, unfamiliar norms, inability to source familiar foods, and communication challenges.</p>
+                </div>
+                <div class="bg-white/10 p-6 rounded-xl border border-white/20">
+                    <h4 class="font-bold text-xl mb-2 text-warm-sand">Fragmented Support</h4>
+                    <p class="font-light">A lack of coordinated non‑clinical support across NHS teams, UKOT governments, and community organisations leaves families without a reliable, culturally responsive safety net.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services & Activities Grid -->
+    <section id="services" class="bg-warm-sand py-20 px-6 pt-28 mt--12">
+        <div class="max-w-6xl mx-auto">
+            <h3 class="font-serif text-3xl text-deep-navy mb-4 text-center font-bold">Our Activities & Services</h3>
+            <p class="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+                UKOT medical‑referral patients and their families experience improved wellbeing, stability, and recovery through strengthened non‑clinical support, community networks, and policy advocacy.
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Activity 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm border-t-4 border-caribbean-blue hover:shadow-md transition">
+                    <h4 class="font-serif text-xl text-caribbean-blue mb-3 font-bold">Logistical & Orientation Support</h4>
+                    <p class="text-gray-600">Identifying affordable accommodation options and providing additional orientation support, such as airport pick‑ups, transport assistance, and guided shopping.</p>
+                </div>
+                <!-- Activity 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm border-t-4 border-leaf-green hover:shadow-md transition">
+                    <h4 class="font-serif text-xl text-leaf-green mb-3 font-bold">Digital Healthcare Integration</h4>
+                    <p class="text-gray-600">Helping patients become confident in the use of online tools to access digital portals for health information, register with a local GP, order repeat prescriptions, and book appointments.</p>
+                </div>
+                <!-- Activity 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm border-t-4 border-tropical-teal hover:shadow-md transition">
+                    <h4 class="font-serif text-xl text-tropical-teal mb-3 font-bold">Cross-Sector Partnerships</h4>
+                    <p class="text-gray-600">Building cross‑sector partnerships with NHS teams, UKOT governments, charities, and community groups to fill critical gaps in non‑clinical care and ensure consistent, culturally sensitive support.</p>
+                </div>
+                <!-- Activity 4 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm border-t-4 border-deep-navy hover:shadow-md transition">
+                    <h4 class="font-serif text-xl text-deep-navy mb-3 font-bold">Welfare-Assistance Grants</h4>
+                    <p class="text-gray-600">Distributing welfare‑assistance grants to eligible vulnerable UKOT citizens to provide immediate relief from socio‑economic hardship and alleviate crisis situations.</p>
+                </div>
+                <!-- Activity 5 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm border-t-4 border-caribbean-blue hover:shadow-md transition">
+                    <h4 class="font-serif text-xl text-caribbean-blue mb-3 font-bold">Health-Education Events</h4>
+                    <p class="text-gray-600">Hosting health‑education events, focus groups, and community discussions to increase awareness of relevant health, welfare, and immigration policies.</p>
+                </div>
+                <!-- Activity 6 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm border-t-4 border-leaf-green hover:shadow-md transition">
+                    <h4 class="font-serif text-xl text-leaf-green mb-3 font-bold">Affordable Housing Solutions</h4>
+                    <p class="text-gray-600">Working with others to source affordable housing options giving patients and their chaperone the opportunity to stay in close connection with each other and remain in proximity to the hospital.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Statement & Meaning -->
+    <section class="py-20 px-6 max-w-4xl mx-auto text-center">
+        <h3 class="font-serif text-2xl text-deep-navy mb-6 font-bold">Our Value Statement</h3>
+        <p class="text-gray-600 mb-6 italic leading-relaxed text-lg">
+            "The name Alliouagana ARC reflects our promise: rising from the prickly bush to follow the Light, shaping a narrative of resilience and transformation grounded in lived experiences of change."
+        </p>
+        <div class="flex flex-wrap justify-center gap-4 mt-8">
+            <span class="bg-gray-100 text-deep-navy px-5 py-3 rounded-lg font-bold shadow-sm">Accountability</span>
+            <span class="bg-gray-100 text-deep-navy px-5 py-3 rounded-lg font-bold shadow-sm">Equitable Resource Allocation</span>
+            <span class="bg-gray-100 text-deep-navy px-5 py-3 rounded-lg font-bold shadow-sm">Compassion</span>
+        </div>
+        <p class="text-gray-600 mt-8">
+            All firmly rooted in reliable care that enhances the wellbeing and dignity for those we serve.
+        </p>
+    </section>
+    
+    <!-- Footer -->
+    <footer id="contact" class="bg-deep-navy text-gray-300 py-12 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                
+                <!-- Brand Info -->
+                <div>
+                    <a href="#" class="font-serif font-bold text-2xl text-white tracking-tight mb-4 inline-block">
+                        Alliouagana <span class="text-leaf-green">Arc</span>
+                    </a>
+                    <p class="text-sm text-gray-400 mb-4 max-w-xs">
+                        A Non-Clinical Support Service Provider for Caribbean UKOT citizens. "Bridging Care and Hospitality."
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#home" class="hover:text-warm-sand transition">Home</a></li>
+                        <li><a href="#about" class="hover:text-warm-sand transition">Who We Are</a></li>
+                        <li><a href="#need" class="hover:text-warm-sand transition">The Need</a></li>
+                        <li><a href="#services" class="hover:text-warm-sand transition">Our Services</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact placeholder -->
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Contact Us</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-envelope mt-1 text-leaf-green"></i>
+                            <a href="mailto:support@alliouaganaarc.org.uk" class="hover:text-white transition">support@alliouaganaarc.org.uk</a>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-phone mt-1 text-leaf-green"></i>
+                            <a href="tel:+440000000000" class="hover:text-white transition">+44 (0) 1234 567 890</a>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-location-dot mt-1 text-leaf-green"></i>
+                            <span>United Kingdom<br/>(Specific location/registered address placeholder)</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-sm text-gray-400">
+                    &copy; 2026 Alliouagana Arc - UKOT CIC. All rights reserved.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#" class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center hover:bg-leaf-green hover:text-white transition">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center hover:bg-leaf-green hover:text-white transition">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center hover:bg-leaf-green hover:text-white transition">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
