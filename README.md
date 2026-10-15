@@ -60,3 +60,28 @@ If you prefer using a local server, you can run one with any static site tool, f
 
 ```bash
 python -m http.server
+
+## Customization
+Common updates you may want to make:
+
+Replace placeholder survey links with live Google Forms URLs
+Update the contact email, phone number, and address
+Add real social media links
+Add more images, content, or service details
+Refine branding, copy, and accessibility details as the project evolves
+
+## Accessibility Notes
+The site includes some accessibility-conscious patterns such as:
+
+Semantic page structure
+ARIA attributes for the survey dialog
+Descriptive navigation and section headings
+Keyboard support for closing the survey modal with Escape
+Purpose
+This site exists to help communicate the mission of Alliouagana Arc and support engagement with the communities it serves. It is intended to build awareness, trust, and access to support services for UKOT citizens and their families.
+
+## License
+No license has been specified yet.
+
+##Contact
+For support or partnership inquiries, use the contact details listed on the website.
