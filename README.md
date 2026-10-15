@@ -48,19 +48,6 @@ The main site is built around a single HTML entry point:
 Assets such as logos and images are stored under:
 
 - `assets/images/`
-
-## Getting Started
-
-To run the site locally:
-
-1. Clone the repository.
-2. Open `alliouagana-arc/index.html` in your browser.
-
-If you prefer using a local server, you can run one with any static site tool, for example:
-
-```bash
-python -m http.server
-
 ## Customization
 Common updates you may want to make:
 
@@ -85,3 +72,17 @@ No license has been specified yet.
 
 ##Contact
 For support or partnership inquiries, use the contact details listed on the website.
+
+## Getting Started
+
+To run the site locally:
+
+1. Clone the repository.
+2. Open `alliouagana-arc/index.html` in your browser.
+
+If you prefer using a local server, you can run one with any static site tool, for example:
+
+```bash
+python -m http.server
+
+
