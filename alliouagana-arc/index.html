@@ -5,13 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alliouagana Arc - UKOT CIC</title>
     <link rel="icon" type="image/png" href="assets/images/AlliouaganaLogo.png">
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome for Icons (THIS FIXES THE ICONS) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    
     <script>
         tailwind.config = {
             theme: {
@@ -29,34 +23,55 @@
                     }
                 }
             }
-        }
+        };
     </script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons (THIS FIXES THE ICONS) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
     <style>
         html { scroll-behavior: smooth; }
         body, html { margin: 0; padding: 0; background-color: #f9fafb; }
         .gradient-bg { background: linear-gradient(135deg, #03045e 0%, #0077b6 100%); }
+        #main-menu { display: none; }
+        #main-menu[data-open="true"] { display: flex; }
+        @media (min-width: 768px) {
+            #main-menu { display: flex; }
+        }
     </style>
 </head>
 <body class="text-gray-800 antialiased leading-relaxed" id="home">
 
     <!-- Navigation Bar -->
     <nav class="bg-deep-navy text-white py-4 px-6 sticky top-0 z-50 shadow-md">
-        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center">
-            <a href="#home" class="flex items-center gap-3 font-serif text-xl font-bold tracking-wider mb-4 md:mb-0" aria-label="Alliouagana Arc home">
-                <img src="assets/images/AlliouaganaLogo.png" alt="" aria-hidden="true" class="w-10 h-10">
-                <span>Alliouagana <span class="text-leaf-green">Arc</span></span>
-            </a>
-            <div class="flex space-x-6 text-sm md:text-base font-light">
-                <a href="#home" class="hover:text-tropical-teal transition">Home</a>
-                <a href="#about" class="hover:text-tropical-teal transition">Who We Are</a>
-                <a href="#need" class="hover:text-tropical-teal transition">The Need</a>
-                <a href="#services" class="hover:text-tropical-teal transition">Our Services</a>
-				<a href="#survey-modal" data-open-survey class="hover:text-tropical-teal transition">Survey</a>
-                <a href="#contact" class="hover:text-tropical-teal transition">Contact Us</a>
-            </div>
-        </div>
-    </nav>
+    <div class="max-w-6xl mx-auto flex flex-wrap justify-between items-center">
+        <a href="#home" class="flex items-center gap-3 font-serif text-xl font-bold tracking-wider"
+           aria-label="Alliouagana Arc home">
+            <img src="assets/images/AlliouaganaLogo.png" alt="" aria-hidden="true" class="w-10 h-10">
+            <span>Alliouagana <span class="text-leaf-green">Arc</span></span>
+        </a>
 
+        <button
+            type="button"
+            id="menu-toggle"
+            class="md:hidden p-2 rounded hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-tropical-teal"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="main-menu">
+            <i class="fa-solid fa-bars" aria-hidden="true"></i>
+        </button>
+
+        <div id="main-menu" data-open="false" class="w-full md:w-auto flex-col md:flex-row md:items-center gap-4 md:gap-6 pt-4 md:pt-0 text-sm md:text-base font-light">
+            <a href="#home" class="hover:text-tropical-teal transition">Home</a>
+            <a href="#about" class="hover:text-tropical-teal transition">Who We Are</a>
+            <a href="#need" class="hover:text-tropical-teal transition">The Need</a>
+            <a href="#services" class="hover:text-tropical-teal transition">Our Services</a>
+            <a href="#survey-modal" data-open-survey class="hover:text-tropical-teal transition">Survey</a>
+            <a href="#contact" class="hover:text-tropical-teal transition">Contact Us</a>
+        </div>
+    </div>
+</nav>
     <!-- Hero Section -->
     <header class="gradient-bg text-white py-20 px-6 text-center shadow-lg">
         <h1 class="font-serif text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Alliouagana <span class="text-leaf-green">Arc</span></h1>
@@ -214,27 +229,6 @@
     </div>
 </div>
 
-<script>
-    const surveyModal = document.getElementById('survey-modal');
-
-    function openSurvey(e) {
-        e.preventDefault();
-        surveyModal.classList.remove('hidden');
-        document.body.classList.add('overflow-hidden');
-    }
-    function closeSurvey() {
-        surveyModal.classList.add('hidden');
-        document.body.classList.remove('overflow-hidden');
-    }
-
-    document.addEventListener('click', e => {
-        if (e.target.closest('[data-open-survey]')) openSurvey(e);
-        if (e.target.closest('[data-close-survey]')) closeSurvey();
-    });
-    surveyModal.addEventListener('click', e => { if (e.target === surveyModal) closeSurvey(); });
-    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeSurvey(); });
-</script>
-    
     <!-- Footer -->
     <footer id="contact" class="bg-deep-navy text-gray-300 py-12 mt-auto">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -301,5 +295,6 @@
         </div>
     </footer>
 
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
