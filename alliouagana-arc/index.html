@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alliouagana Arc - UKOT CIC</title>
+    <link rel="icon" type="image/png" href="assets/images/alliouaganaLogo.png">
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts -->
@@ -41,28 +42,30 @@
     <!-- Navigation Bar -->
     <nav class="bg-deep-navy text-white py-4 px-6 sticky top-0 z-50 shadow-md">
         <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center">
-            <div class="font-serif text-xl font-bold tracking-wider mb-4 md:mb-0">
-                Alliouagana Arc
-            </div>
+            <a href="#home" class="flex items-center gap-3 font-serif text-xl font-bold tracking-wider mb-4 md:mb-0" aria-label="Alliouagana Arc home">
+                <img src="assets/images/alliouaganaLogo.png" alt="" aria-hidden="true" class="w-10 h-10">
+                <span>Alliouagana <span class="text-leaf-green">Arc</span></span>
+            </a>
             <div class="flex space-x-6 text-sm md:text-base font-light">
                 <a href="#home" class="hover:text-tropical-teal transition">Home</a>
                 <a href="#about" class="hover:text-tropical-teal transition">Who We Are</a>
                 <a href="#need" class="hover:text-tropical-teal transition">The Need</a>
                 <a href="#services" class="hover:text-tropical-teal transition">Our Services</a>
-				<a href="#contact" class="hover:text-tropical-teal transition">Contact Us</a>
+				<a href="#survey-modal" data-open-survey class="hover:text-tropical-teal transition">Survey</a>
+                <a href="#contact" class="hover:text-tropical-teal transition">Contact Us</a>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <header class="gradient-bg text-white py-20 px-6 text-center shadow-lg">
-        <h1 class="font-serif text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Alliouagana Arc</h1>
+        <h1 class="font-serif text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Alliouagana <span class="text-leaf-green">Arc</span></h1>
         <h2 class="text-xl md:text-2xl font-light text-tropical-teal mb-6 tracking-wide uppercase">UKOT CIC</h2>
         <p class="max-w-3xl mx-auto text-lg md:text-xl font-light mb-8 leading-relaxed">
             Our Main Objective: To support UKOT citizens, and authorities in navigating the United Kingdom National Health Service by establishing and operating a multi‑stakeholder social development partnership model. This model strengthens coordination, expands community capacity, and delivers measurable improvements in the lived experiences of citizens across housing, health, wellbeing, and socio‑economic stability.
         </p>
         <div class="inline-block bg-warm-sand text-deep-navy font-bold py-3 px-8 rounded-full shadow-md text-lg">
-            🌴 Compassionate Support Far From Home
+            <img src="assets/images/AlliouaganaArc.jpeg" alt="" aria-hidden="true" class="inline-block w-5 h-5 object-contain align-text-bottom"> Compassionate Support Far From Home
         </div>
     </header>
 
@@ -160,13 +163,13 @@
         <p class="text-gray-600 mb-6 italic leading-relaxed text-lg">
             "The name Alliouagana ARC reflects our promise: rising from the prickly bush to follow the Light, shaping a narrative of resilience and transformation grounded in lived experiences of change."
         </p>
-        <div class="flex flex-col md:flex-row justify-center items-stretch gap-3 mt-8 w-full">
+        <div class="grid grid-cols-2 md:grid-cols-4 justify-center items-stretch gap-3 mt-8 w-full">
             <span class="bg-gray-100 text-deep-navy px-5 py-3 rounded-lg font-bold shadow-sm">Connection</span>
             <span class="bg-gray-100 text-deep-navy px-5 py-3 rounded-lg font-bold shadow-sm">Accountabilty</span>
             <span class="bg-gray-100 text-deep-navy px-5 py-3 rounded-lg font-bold shadow-sm">Resiliance</span>
 			<span class="bg-gray-100 text-deep-navy px-5 py-3 rounded-lg font-bold shadow-sm">Empathy</span>
         </div>
-		<div class="flex flex-col md:flex-row justify-center items-stretch gap-3 mt-8 w-full">
+		<div class="grid grid-cols-2 md:grid-cols-4 justify-center items-stretch gap-3 mt-8 w-full">
             <span class="bg-gray-100 text-deep-navy px-5 py-3 rounded-lg font-bold shadow-sm">Compassion</span>
             <span class="bg-gray-100 text-deep-navy px-5 py-3 rounded-lg font-bold shadow-sm">Accessability</span>
             <span class="bg-gray-100 text-deep-navy px-5 py-3 rounded-lg font-bold shadow-sm">Resourcefulness</span>
@@ -176,6 +179,61 @@
             All firmly rooted in reliable care that enhances the wellbeing and dignity for those we serve.
         </p>
     </section>
+    <!-- Survey Modal -->
+<div id="survey-modal" class="hidden fixed inset-0 z-[100] flex items-center justify-center p-4 bg-deep-navy/70 backdrop-blur-sm" role="dialog" aria-modal="true" aria-labelledby="survey-title">
+    <div class="bg-white rounded-2xl shadow-xl w-full max-w-lg max-h-[90vh] overflow-y-auto border-t-4 border-leaf-green">
+        <div class="gradient-bg text-white px-6 py-5 rounded-t-xl">
+            <h3 id="survey-title" class="font-serif text-2xl font-bold">Community <span class="text-leaf-green">Surveys</span></h3>
+            <p class="text-tropical-teal text-sm font-light mt-1">Choose a survey to complete</p>
+        </div>
+
+        <ul class="p-6 space-y-3">
+            <li>
+                <a href="https://forms.gle/REPLACE_ME_1" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between bg-gray-100 text-deep-navy px-5 py-3 rounded-lg font-bold shadow-sm hover:bg-leaf-green hover:text-white transition">
+                    <span>Patient Experience Survey</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square text-sm"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://forms.gle/REPLACE_ME_2" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between bg-gray-100 text-deep-navy px-5 py-3 rounded-lg font-bold shadow-sm hover:bg-leaf-green hover:text-white transition">
+                    <span>Housing Needs Survey</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square text-sm"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://forms.gle/REPLACE_ME_3" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between bg-gray-100 text-deep-navy px-5 py-3 rounded-lg font-bold shadow-sm hover:bg-leaf-green hover:text-white transition">
+                    <span>Community Feedback Survey</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square text-sm"></i>
+                </a>
+            </li>
+        </ul>
+
+        <div class="flex justify-end px-6 pb-6">
+            <button type="button" data-close-survey class="bg-gray-100 text-deep-navy px-5 py-2 rounded-lg font-bold shadow-sm hover:bg-gray-200 transition">Cancel</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    const surveyModal = document.getElementById('survey-modal');
+
+    function openSurvey(e) {
+        e.preventDefault();
+        surveyModal.classList.remove('hidden');
+        document.body.classList.add('overflow-hidden');
+    }
+    function closeSurvey() {
+        surveyModal.classList.add('hidden');
+        document.body.classList.remove('overflow-hidden');
+    }
+
+    document.addEventListener('click', e => {
+        if (e.target.closest('[data-open-survey]')) openSurvey(e);
+        if (e.target.closest('[data-close-survey]')) closeSurvey();
+    });
+    surveyModal.addEventListener('click', e => { if (e.target === surveyModal) closeSurvey(); });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeSurvey(); });
+</script>
     
     <!-- Footer -->
     <footer id="contact" class="bg-deep-navy text-gray-300 py-12 mt-auto">
@@ -200,6 +258,7 @@
                         <li><a href="#about" class="hover:text-warm-sand transition">Who We Are</a></li>
                         <li><a href="#need" class="hover:text-warm-sand transition">The Need</a></li>
                         <li><a href="#services" class="hover:text-warm-sand transition">Our Services</a></li>
+                        <li><a href="#survey-modal" data-open-survey class="hover:text-warm-sand transition">Survey</a></li>
                     </ul>
                 </div>
 
@@ -225,7 +284,7 @@
 
             <div class="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
                 <p class="text-sm text-gray-400">
-                    &copy; 2026 Alliouagana Arc - UKOT CIC. All rights reserved.
+                    &copy; 2026 Alliouagana <span class="text-leaf-green">Arc</span> - UKOT CIC. All rights reserved.
                 </p>
                 <div class="flex space-x-4">
                     <a href="#" class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center hover:bg-leaf-green hover:text-white transition">

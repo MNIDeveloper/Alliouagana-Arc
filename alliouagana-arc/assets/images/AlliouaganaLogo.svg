@@ -1,0 +1,230 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 1000" width="100%" height="100%">
+  <defs>
+    <!-- Circular clip path to make everything outside the circular border transparent -->
+    <clipPath id="circle-clip">
+      <circle cx="500" cy="500" r="485" />
+    </clipPath>
+
+    <!-- Linear & Radial Gradients -->
+    <radialGradient id="bg-grad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FCFAF2" />
+      <stop offset="70%" stop-color="#F7F1DF" />
+      <stop offset="100%" stop-color="#EBE0C5" />
+    </radialGradient>
+
+    <linearGradient id="gold-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D4AF37" />
+      <stop offset="30%" stop-color="#FFF2A1" />
+      <stop offset="50%" stop-color="#AA7C11" />
+      <stop offset="75%" stop-color="#FBF0B9" />
+      <stop offset="100%" stop-color="#8A6208" />
+    </linearGradient>
+
+    <linearGradient id="boat-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8B4513" />
+      <stop offset="40%" stop-color="#5C2C0C" />
+      <stop offset="100%" stop-color="#2D1303" />
+    </linearGradient>
+
+    <linearGradient id="boat-trim" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#B8860B" />
+      <stop offset="50%" stop-color="#FFE4B5" />
+      <stop offset="100%" stop-color="#B8860B" />
+    </linearGradient>
+
+    <linearGradient id="water-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0055A5" />
+      <stop offset="100%" stop-color="#002347" />
+    </linearGradient>
+
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="3" dy="5" stdDeviation="4" flood-opacity="0.3" />
+    </filter>
+  </defs>
+
+  <g clip-path="url(#circle-clip)">
+    <!-- Background Circle -->
+    <circle cx="500" cy="500" r="485" fill="url(#bg-grad)" />
+
+    <!-- Center Globe Network Lines -->
+    <g stroke="#D4AF37" stroke-width="2" fill="none" opacity="0.65">
+      <ellipse cx="500" cy="310" rx="220" ry="220" />
+      <ellipse cx="500" cy="310" rx="220" ry="80" />
+      <ellipse cx="500" cy="310" rx="220" ry="150" />
+      <ellipse cx="500" cy="310" rx="90" ry="220" />
+      <ellipse cx="500" cy="310" rx="160" ry="220" />
+      <!-- Golden Nodes -->
+      <circle cx="500" cy="90" r="6" fill="#D4AF37" />
+      <circle cx="500" cy="530" r="6" fill="#D4AF37" />
+      <circle cx="280" cy="310" r="6" fill="#D4AF37" />
+      <circle cx="720" cy="310" r="6" fill="#D4AF37" />
+      <circle cx="350" cy="190" r="6" fill="#D4AF37" />
+      <circle cx="650" cy="190" r="6" fill="#D4AF37" />
+      <circle cx="380" cy="250" r="6" fill="#D4AF37" />
+      <circle cx="620" cy="250" r="6" fill="#D4AF37" />
+      <circle cx="430" cy="510" r="6" fill="#D4AF37" />
+      <circle cx="570" cy="510" r="6" fill="#D4AF37" />
+      <circle cx="500" cy="230" r="6" fill="#D4AF37" />
+      <circle cx="500" cy="390" r="6" fill="#D4AF37" />
+    </g>
+
+    <!-- Montserrat Map Silhouette (Left - Green) -->
+    <path d="M210 175 C 240 185, 290 200, 310 240 C 330 280, 315 330, 325 380 C 335 430, 380 470, 410 520 C 425 545, 435 580, 420 620 C 410 645, 380 680, 350 695 C 320 710, 275 705, 250 680 C 220 650, 180 630, 150 590 C 120 550, 80 510, 70 480 C 60 450, 80 420, 100 390 C 120 360, 155 310, 175 250 Z" fill="#2E7D32" stroke="#1B5E20" stroke-width="3" filter="url(#shadow)" />
+
+    <!-- UK Map Silhouette (Right) -->
+    <g filter="url(#shadow)">
+      <!-- Scotland (Blue with Saltire) -->
+      <clipPath id="scotland-clip">
+        <path d="M670 120 L740 100 L790 140 L810 210 L770 280 L740 360 L700 350 L680 300 L650 240 L670 180 Z" />
+      </clipPath>
+      <path d="M670 120 L740 100 L790 140 L810 210 L770 280 L740 360 L700 350 L680 300 L650 240 L670 180 Z" fill="#0055A5" stroke="#002347" stroke-width="2" />
+      <g clip-path="url(#scotland-clip)" stroke="#FFFFFF" stroke-width="12">
+        <line x1="600" y1="80" x2="850" y2="380" />
+        <line x1="850" y1="80" x2="600" y2="380" />
+      </g>
+
+      <!-- Northern Ireland -->
+      <path d="M640 330 L690 320 L710 360 L680 410 L630 400 Z" fill="#FFFFFF" stroke="#000" stroke-width="1.5" />
+      <path d="M665 320 L665 405 M630 362 L705 362" stroke="#D32F2F" stroke-width="4" />
+
+      <!-- Wales (Green with Red Dragon representation) -->
+      <path d="M640 450 L710 440 L730 490 L730 550 L650 580 L620 530 Z" fill="#1B5E20" stroke="#0D3B0E" stroke-width="2" />
+      <!-- Red Dragon emblem simplified -->
+      <path d="M660 500 C 680 480, 700 510, 680 530 C 670 540, 690 560, 660 550 C 650 530, 650 510, 660 500 Z" fill="#D32F2F" />
+
+      <!-- England (White with St George's Cross & Light Blue Base) -->
+      <clipPath id="england-clip">
+        <path d="M740 360 L810 340 L840 400 L810 500 L780 600 L600 670 L530 650 L580 600 L650 580 L730 550 L730 490 L710 440 L740 360 Z" />
+      </clipPath>
+      <path d="M740 360 L810 340 L840 400 L810 500 L780 600 L600 670 L530 650 L580 600 L650 580 L730 550 L730 490 L710 440 L740 360 Z" fill="#E3F2FD" stroke="#1565C0" stroke-width="2" />
+      <g clip-path="url(#england-clip)">
+        <path d="M765 300 L765 680 M500 480 L880 480" stroke="#D32F2F" stroke-width="22" />
+      </g>
+    </g>
+
+    <!-- Big Ben / Elizabeth Tower Graphic -->
+    <g transform="translate(700, 220) scale(0.85)" filter="url(#shadow)">
+      <!-- Tower Base & Main Body -->
+      <rect x="130" y="220" width="80" height="320" fill="#C5A059" stroke="#5D4037" stroke-width="3" />
+      <rect x="140" y="240" width="15" height="280" fill="#A47E3B" />
+      <rect x="165" y="240" width="15" height="280" fill="#A47E3B" />
+      <rect x="190" y="240" width="15" height="280" fill="#A47E3B" />
+      <!-- Clock Section -->
+      <rect x="120" y="150" width="100" height="70" fill="#DAA520" stroke="#5D4037" stroke-width="3" />
+      <circle cx="170" cy="185" r="28" fill="#FFFFFF" stroke="#000000" stroke-width="3" />
+      <circle cx="170" cy="185" r="23" fill="none" stroke="#000000" stroke-width="1" />
+      <!-- Hands -->
+      <line x1="170" y1="185" x2="170" y2="167" stroke="#000000" stroke-width="3" stroke-linecap="round" />
+      <line x1="170" y1="185" x2="182" y2="185" stroke="#000000" stroke-width="2" stroke-linecap="round" />
+      <!-- Roof / Spire -->
+      <path d="M120 150 L170 20 L220 150 Z" fill="#78909C" stroke="#37474F" stroke-width="3" />
+      <path d="M170 0 L170 20" stroke="#DAA520" stroke-width="4" />
+    </g>
+
+    <!-- Tropical Heliconia Flower & Leaves (Left Foreground) -->
+    <g transform="translate(60, 240)" filter="url(#shadow)">
+      <!-- Big Leaves -->
+      <path d="M130 220 Q60 100 10 150 Q-10 250 110 320 Z" fill="#2E7D32" stroke="#1B5E20" stroke-width="3" />
+      <path d="M130 220 Q200 80 250 140 Q270 250 150 330 Z" fill="#388E3C" stroke="#1B5E20" stroke-width="3" />
+      <path d="M120 300 Q20 320 0 400 Q40 480 140 420 Z" fill="#1B5E20" stroke="#0D3B0E" stroke-width="3" />
+      <path d="M140 310 Q260 330 270 410 Q210 490 120 430 Z" fill="#2E7D32" stroke="#1B5E20" stroke-width="3" />
+
+      <!-- Stem -->
+      <path d="M130 180 L130 430" stroke="#1B5E20" stroke-width="14" stroke-linecap="round" />
+
+      <!-- Red/Yellow Bracts (Heliconia / Lobster Claw) -->
+      <path d="M130 250 Q190 230 210 190 Q150 270 130 290 Z" fill="#D32F2F" stroke="#B71C1C" stroke-width="2" />
+      <path d="M130 230 Q70 200 50 160 Q110 240 130 260 Z" fill="#FF3D00" stroke="#B71C1C" stroke-width="2" />
+      <path d="M130 190 Q180 160 190 120 Q140 200 130 220 Z" fill="#D32F2F" stroke="#B71C1C" stroke-width="2" />
+      <path d="M130 160 Q80 130 70 90 Q120 170 130 180 Z" fill="#FF3D00" stroke="#B71C1C" stroke-width="2" />
+      <path d="M130 120 Q170 90 175 60 Q135 130 130 140 Z" fill="#D32F2F" stroke="#B71C1C" stroke-width="2" />
+
+      <!-- Golden/Yellow Edges on Bracts -->
+      <path d="M130 250 Q190 230 210 190" fill="none" stroke="#FFD54F" stroke-width="3" />
+      <path d="M130 230 Q70 200 50 160" fill="none" stroke="#FFD54F" stroke-width="3" />
+      <path d="M130 190 Q180 160 190 120" fill="none" stroke="#FFD54F" stroke-width="3" />
+
+      <!-- Montserrat Oriole Bird Perched -->
+      <g transform="translate(180, 120) scale(0.9)">
+        <!-- Tail -->
+        <path d="M30 120 L120 180 L100 190 L20 130 Z" fill="#212121" />
+        <!-- Body -->
+        <ellipse cx="20" cy="80" rx="35" ry="50" fill="#FF6F00" transform="rotate(-30 20 80)" />
+        <!-- Black Head & Wing -->
+        <path d="M-10 40 C 0 10, 40 10, 50 40 C 50 60, 30 80, 10 80 Z" fill="#212121" />
+        <path d="M10 60 C 30 60, 60 90, 40 130 C 20 120, 0 90, 10 60 Z" fill="#212121" stroke="#FF6F00" stroke-width="1.5" />
+        <!-- Beak -->
+        <path d="M-10 35 L-30 42 L-8 47 Z" fill="#424242" />
+        <!-- Eye -->
+        <circle cx="5" cy="35" r="4" fill="#FFFFFF" />
+        <circle cx="4" cy="35" r="2" fill="#000000" />
+      </g>
+    </g>
+
+    <!-- Central UKOT Logo / Circle Emblem -->
+    <g transform="translate(500, 400)" filter="url(#shadow)">
+      <!-- Outer Ring of People holding hands -->
+      <circle cx="0" cy="0" r="95" fill="#FFFFFF" stroke="#0A2540" stroke-width="5" />
+
+      <!-- People Chain Outer Pattern -->
+      <g fill="#0A2540">
+        <!-- Repeating figure dots & arcs around ring -->
+        <circle cx="0" cy="-80" r="9" />
+        <circle cx="56" cy="-56" r="9" />
+        <circle cx="80" cy="0" r="9" />
+        <circle cx="56" cy="56" r="9" />
+        <circle cx="0" cy="80" r="9" />
+        <circle cx="-56" cy="56" r="9" />
+        <circle cx="-80" cy="0" r="9" />
+        <circle cx="-56" cy="-56" r="9" />
+
+        <!-- Holding Hands Arc Joiners -->
+        <circle cx="0" cy="0" r="82" fill="none" stroke="#0A2540" stroke-width="4" stroke-dasharray="12 10" />
+      </g>
+
+      <!-- Inner Heart -->
+      <path d="M0 25 C -35 -10, -35 -40, 0 -25 C 35 -40, 35 -10, 0 25 Z" fill="none" stroke="#0A2540" stroke-width="4" />
+      <!-- Water Waves under Heart -->
+      <path d="M-20 8 Q -10 2, 0 8 Q 10 14, 20 8 M-15 15 Q -7 10, 0 15 Q 7 20, 15 15" fill="none" stroke="#0A2540" stroke-width="2.5" />
+
+      <!-- UKOT Text -->
+      <text x="0" y="-3" font-family="'Arial Black', 'Helvetica Neue', sans-serif" font-weight="900" font-size="22" fill="#0A2540" text-anchor="middle" dominant-baseline="middle">UKOT</text>
+    </g>
+
+    <!-- Boat Hull Arching at Bottom ("The Arc") -->
+    <g filter="url(#shadow)">
+      <!-- Main Wooden Hull -->
+      <path d="M60 600 C 220 820, 780 820, 940 600 C 860 880, 140 880, 60 600 Z" fill="url(#boat-grad)" stroke="#3E1C00" stroke-width="4" />
+
+      <!-- Golden Decorative Trim / Rails -->
+      <path d="M55 600 C 220 810, 780 810, 945 600 C 920 630, 800 830, 500 830 C 200 830, 80 630, 55 600 Z" fill="url(#boat-trim)" stroke="#8A6208" stroke-width="2" />
+
+      <!-- Curled Decorative Ends (Prow & Stern) -->
+      <path d="M55 600 C 30 570, 70 510, 110 530 C 130 540, 100 580, 75 595 Z" fill="url(#gold-grad)" stroke="#5C2C0C" stroke-width="2" />
+      <path d="M945 600 C 970 570, 930 510, 890 530 C 870 540, 900 580, 925 595 Z" fill="url(#gold-grad)" stroke="#5C2C0C" stroke-width="2" />
+
+      <!-- "Alliouagana Arc" Text along the Boat -->
+      <path id="text-path-boat" d="M 120 670 Q 500 830 880 670" fill="none" stroke="none" />
+      <text font-family="'Georgia', 'Times New Roman', serif" font-weight="bold" font-size="64" fill="#FFFFFF" stroke="#000000" stroke-width="2">
+        <textPath xlink:href="#text-path-boat" startOffset="50%" text-anchor="middle">
+          Alliouagana Arc
+        </textPath>
+      </text>
+    </g>
+
+    <!-- Ocean Waves at Very Bottom Base -->
+    <g filter="url(#shadow)">
+      <path d="M150 830 Q 320 780, 500 830 Q 680 880, 850 830 L 900 920 Q 500 980, 100 920 Z" fill="url(#water-grad)" />
+      <!-- Wave Highlights -->
+      <path d="M160 840 Q 330 800, 500 840 Q 670 880, 840 840" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" />
+      <path d="M220 875 Q 360 840, 500 875 Q 640 910, 780 875" fill="none" stroke="#64B5F6" stroke-width="5" stroke-linecap="round" />
+      <path d="M180 895 Q 340 860, 500 895 Q 660 930, 820 895" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" />
+    </g>
+
+    <!-- Outer Circular Gold & Navy Borders -->
+    <circle cx="500" cy="500" r="485" fill="none" stroke="#0A2540" stroke-width="12" />
+    <circle cx="500" cy="500" r="473" fill="none" stroke="url(#gold-grad)" stroke-width="10" />
+    <circle cx="500" cy="500" r="463" fill="none" stroke="#0A2540" stroke-width="6" />
+    <circle cx="500" cy="500" r="458" fill="none" stroke="url(#gold-grad)" stroke-width="3" />
+  </g>
+</svg>
